@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PortfAdv</title>
+    <title>檢覽-KENLAN-</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+<header class="navbar navbar-fixed-top navbar-inverse" style="margin-bottom: 0px;">
+<!-- 	<%= link_to %> -->
+</header>
+
+
     <%= yield %>
-  </body>
+
+  <footer style=" background-color: black; text-align: center;">
+    <div class="sticky_f">
+    <p>
+      <a style="color: white;">利用規約　|</a>
+      <a style="color: white;">プライバシーポリシー　|</a>
+      <a style="color: white;">サイトマップ</a>
+    </p>
+    <p style="color: white;"><small>Copyrighht © 2017 ABCD Co.,Ltd. All Rights Reserved.</small></p>
+  </div>
+  </footer>
+
+
 </html>
